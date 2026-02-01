@@ -123,8 +123,8 @@ https://templatemo.com/tm-593-personal-shape
         }
 
         :root {
-            --primary-color: #6366f1;
-            --secondary-color: #8b5cf6;
+            --primary-color: #b4673c;
+            --secondary-color: #55828b;
             --accent-color: #f59e0b;
             --accent-pink: #ec4899;
             --accent-cyan: #06b6d4;
@@ -138,7 +138,7 @@ https://templatemo.com/tm-593-personal-shape
             --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
             --gradient-tertiary: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-            --gradient-elegant: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            --gradient-elegant: linear-gradient(135deg, #422315 0%, #b4673c 50%, #774f34 100%);
             --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
             --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
             --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -179,7 +179,7 @@ https://templatemo.com/tm-593-personal-shape
         .nav-container {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 0 4rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -217,20 +217,7 @@ https://templatemo.com/tm-593-personal-shape
             color: var(--primary-color);
             transform: translateY(-1px);
         }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: 0;
-            left: 50%;
-            background: var(--gradient-primary);
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            transform: translateX(-50%);
-            border-radius: 1px;
-        }
-
+     
         .nav-links a:hover::after {
             width: 100%;
         }
@@ -593,39 +580,28 @@ https://templatemo.com/tm-593-personal-shape
 
         /* Section Styles */
         section {
-            padding: 8rem 0;
+            padding: 5rem 0 2rem 0;
         }
 
         .container {
+			border: 1px solid lightgray;
             max-width: 1400px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 0 4rem;
         }
 
         .section-title {
             text-align: center;
             font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
-            font-size: 3.5rem;
+            font-size: 2.5rem;
             font-weight: 600;
-            margin-bottom: 4rem;
+            margin-bottom: 2rem;
             background: var(--gradient-elegant);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
             letter-spacing: -1px;
             position: relative;
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            width: 60px;
-            height: 4px;
-            background: var(--gradient-primary);
-            bottom: -20px;
-            left: 50%;
-            transform: translateX(-50%);
-            border-radius: 2px;
         }
 
         /* About Section */
@@ -646,7 +622,6 @@ https://templatemo.com/tm-593-personal-shape
 
         .about-content {
             display: grid;
-
             grid-template-columns: 1fr 1.5fr;
             gap: 6rem;
             align-items: center;
@@ -656,17 +631,11 @@ https://templatemo.com/tm-593-personal-shape
         .about-image {
             width: 100%;
             height: 500px;
-            background: url('images/smiling-girl-computer-desktop.jpg') center/cover;
-            border-radius: 30px;
+            background: url('images/orange-shirt-cutout.png') center/cover;
             position: relative;
             overflow: hidden;
-            box-shadow: var(--shadow-2xl);
             transform: rotate(-2deg);
             transition: transform 0.4s ease;
-        }
-
-        .about-image:hover {
-            transform: rotate(0deg) scale(1.02);
         }
 
         .about-image::before {
@@ -676,7 +645,6 @@ https://templatemo.com/tm-593-personal-shape
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, rgba(99, 102, 241, 0.3) 0%, rgba(139, 92, 246, 0.2) 100%);
             transition: opacity 0.3s ease;
         }
 
@@ -698,7 +666,7 @@ https://templatemo.com/tm-593-personal-shape
         }
 
         .about-text p {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             color: var(--text-secondary);
             margin-bottom: 2rem;
             line-height: 1.8;
@@ -737,14 +705,14 @@ https://templatemo.com/tm-593-personal-shape
 
         .portfolio-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 3rem;
-            margin-top: 2rem;
+            margin-top: 1rem;
         }
 
         .portfolio-item {
             background: var(--bg-card);
-            border-radius: 25px;
+            border-radius: 15px;
             overflow: hidden;
             box-shadow: var(--shadow-lg);
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -766,7 +734,7 @@ https://templatemo.com/tm-593-personal-shape
 
         .portfolio-image {
             width: 100%;
-            height: 180px;
+            height: 300px;
             background: var(--gradient-primary);
             position: relative;
             overflow: hidden;
@@ -775,19 +743,19 @@ https://templatemo.com/tm-593-personal-shape
         }
 
         .portfolio-item:nth-child(1) .portfolio-image {
-            background-image: url('images/working-business-women.jpg');
+            background-image: url('images/myaz-cover.png');
         }
 
         .portfolio-item:nth-child(2) .portfolio-image {
-            background-image: url('images/computer-desk-stickers.jpg');
+            background-image: url('images/Golfshot-android.jpg');
         }
 
         .portfolio-item:nth-child(3) .portfolio-image {
-            background-image: url('images/curved-display-pinky-girl.jpg');
+            background-image: url('images/golfshot-artboards.png');
         }
 
         .portfolio-item:nth-child(4) .portfolio-image {
-            background-image: url('images/dashboard-interfaces-transparent-displays.jpg');
+            background-image: url('images/LL-bags.png');
         }
 
         .portfolio-item:nth-child(5) .portfolio-image {
@@ -805,12 +773,13 @@ https://templatemo.com/tm-593-personal-shape
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 100%);
+/*            background: linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 100%);*/
             transition: all 0.3s ease;
         }
 
         .portfolio-item:hover .portfolio-image::before {
-            background: linear-gradient(135deg, rgba(99, 102, 241, 0.4) 0%, rgba(139, 92, 246, 0.3) 100%);
+/*            background: linear-gradient(135deg, rgba(85, 130, 139, 0.4) 0%, rgba(111, 174, 186, 0.3) 100%);*/
+/*			background: linear-gradient(135deg, rgba(226, 133, 81, 0.4) 0%, rgba(180, 103, 160, 0.3) 100%);*/
         }
 
         .portfolio-content {
