@@ -246,6 +246,7 @@ https://templatemo.com/tm-593-personal-shape
 		  min-width: 160px;
 		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 		  z-index: 1;
+		  line-height: 1.4;
 		}
 
 		.dropdown-content a {
@@ -799,7 +800,7 @@ https://templatemo.com/tm-593-personal-shape
         }
 
         .portfolio-item:nth-child(5) .portfolio-image {
-            background-image: url('images/home page/tat-mockup.png');
+            background-image: url('images/home page/Tat-mockup.png');
         }
 
         .portfolio-item:nth-child(6) .portfolio-image {
